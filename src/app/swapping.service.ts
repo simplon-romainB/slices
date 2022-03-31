@@ -46,7 +46,7 @@ export class SwappingService {
 
       private disapearence(path) {
         this.vanished = true;
-        const waiting = setTimeout(() => this.route.navigate(['/', path]), 1000);
+        const waiting = setTimeout(() => this.route.navigate(['/', path]), 500);
       }
   }
 

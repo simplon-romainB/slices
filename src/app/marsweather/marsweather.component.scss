@@ -1,3 +1,14 @@
 .weather {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-image: url(../../assets/marsweatherslide.jpg);
+}
+
+.weathercomponents {
+  height: 33%;
+  width:50%;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: white;
 }

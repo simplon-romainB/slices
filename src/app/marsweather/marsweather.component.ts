@@ -1,4 +1,9 @@
+
 import { Component, OnInit } from '@angular/core';
+import { MaaSService } from '../maa-s.service';
+
+import { Observable} from 'rxjs';
+
 
 @Component({
   selector: 'app-marsweather',
@@ -7,8 +12,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarsweatherComponent implements OnInit {
 
-  constructor() { }
+  constructor(private maas: MaaSService) { }
 
-  ngOnInit() {}
-
+  ngOnInit() {
+    this.getWeatherData();
+  }
+    private getWeatherData() {
+    this.maas.getMaas().subscribe(res => console.log(res));
+  }
 }
+
