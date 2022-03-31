@@ -1,0 +1,8 @@
+<ion-app>
+    <div class = 'container'>
+      <div class = 'slide marsweather' [ngClass]="{'falling':swappingService.vanished === true}"#weather></div>
+      <div class = 'slide marsphotos' [ngClass]="{'falling':swappingService.vanished === true}"#photos></div>
+      <div class = 'slide marsnumbers' [ngClass]="{'falling':swappingService.vanished === true}"#numbers></div>
+  </div>
+  <ion-router-outlet *ngIf="swappingService.vanished === true"></ion-router-outlet>
+</ion-app>

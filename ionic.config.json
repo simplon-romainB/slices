@@ -1,0 +1,7 @@
+{
+  "name": "slices",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

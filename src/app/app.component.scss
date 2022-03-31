@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/backgroundmain.jpg);
+}
+
+.falling {
+  transform: translate(0, 320%);
+  transition-duration: 1s;
+}
+
+.marsnumbers {
+  background-image: url(../assets/marsnumberslide.jpg);
+  animation-duration: 1s;
+  transition-duration: 0.7s;
+}
+
+.marsphotos {
+  background-image: url(../assets/marsphotoslide.jpg);
+  animation-duration: 1.5s;
+  transition-duration: 1s;
+}
+
+.marsweather {
+  background-image: url(../assets/marsweatherslide.jpg);
+  animation-duration: 2s;
+  transition-duration: 1.5s;
+}
+
+.slide {
+  height: 33%;
+  width: 100%;
+  border: 1px solid black;
+  background-size: cover;
+  border-radius: 10%;
+  animation-name: startAnimation;
+  z-index:999;
+
+}
+
+@keyframes startAnimation {
+  0%{ transform: translate(-100%);}
+  100%{transform: translate(0);}
+
+}
+
+
