@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { MaaSService } from '../maa-s.service';
 
 import { Observable} from 'rxjs';
+import { SwappingService } from '../swapping.service';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { Observable} from 'rxjs';
 })
 export class MarsweatherComponent implements OnInit {
 
-  constructor(private maas: MaaSService) { }
+  constructor(private maas: MaaSService, private swappingService: SwappingService) { }
 
   ngOnInit() {
     this.getWeatherData();

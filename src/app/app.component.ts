@@ -26,7 +26,6 @@ export class AppComponent implements AfterViewInit {
     this.swappingService2.setupGesture(this.photos.nativeElement, 'photos');
     this.swappingService3.setupGesture(this.numbers.nativeElement, 'numbers');
   }
-
 }
 
 

@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 import { MarsnumbersComponent } from './marsnumbers/marsnumbers.component';
 import { MarsphotosComponent } from './marsphotos/marsphotos.component';
 import { MarsweatherComponent } from './marsweather/marsweather.component';
 
-const routes: Routes = [ {path: 'weather', component: MarsweatherComponent},
+const routes: Routes = [
+                         {path: 'weather', component: MarsweatherComponent},
                          {path: 'photos', component: MarsphotosComponent},
                          {path: 'numbers', component: MarsnumbersComponent}
 

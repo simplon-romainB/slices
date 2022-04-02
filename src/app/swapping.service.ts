@@ -11,6 +11,10 @@ export class SwappingService {
     private vanished = false;
 
     constructor(private gestctl: GestureController, private route: Router) {}
+      public backing() {
+        this.route.navigate(['/']);
+        this.vanished = false;
+    }
       public setupGesture(element, path){
       const gesture: Gesture = this.gestctl.create({
         el: element,
@@ -43,10 +47,10 @@ export class SwappingService {
           return false;
         }
       }
-
       private disapearence(path) {
         this.vanished = true;
         const waiting = setTimeout(() => this.route.navigate(['/', path]), 500);
       }
+
   }
 

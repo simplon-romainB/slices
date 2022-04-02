@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwappingService } from '../swapping.service';
 
 @Component({
   selector: 'app-marsphotos',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarsphotosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private swappingService: SwappingService) { }
 
   ngOnInit() {}
 
